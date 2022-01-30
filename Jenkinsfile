@@ -55,8 +55,9 @@ node {
     sh 'docker push mydevopslabs/my-app:0.0.1'
   }
 
-  stage('Deploy Docker Container'){
+  stage('Ansible-Playbook Execution'){
 
+      
    ansiblePlaybook credentialsId: 'Ansible-CICD', disableHostKeyChecking: true, installation: 'Ansible2', inventory: 'deploy.inv', playbook: 'deploy-docker.yml'
 
     }
