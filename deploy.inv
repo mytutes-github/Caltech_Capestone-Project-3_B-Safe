@@ -1,2 +1,2 @@
 [deploy]
-172.31.25.217 ansible_user=ansible1
+172.31.29.76 ansible_user=user1
